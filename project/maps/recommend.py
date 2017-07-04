@@ -19,7 +19,7 @@ def find_closest(location, centroids):
     [2.0, 3.0]
     """
     # BEGIN Question 3
-    "*** REPLACE THIS LINE ***"
+    return min(centroid, key = lambda pos: distance(pos, location))
     # END Question 3
 
 
@@ -48,7 +48,7 @@ def group_by_centroid(restaurants, centroids):
     restaurants closest to the same centroid.
     """
     # BEGIN Question 4
-    "*** REPLACE THIS LINE ***"
+    "*** REPLACE THIS LINE***"
     # END Question 4
 
 
