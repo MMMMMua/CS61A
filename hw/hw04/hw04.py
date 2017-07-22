@@ -231,7 +231,7 @@ def same_shape(t1, t2):
     """
     "*** YOUR CODE HERE ***"
     if (len(branches(t1)) != len(branches(t2))): return False
-    for b1, b2 in list(map((lambda x, y: (x, y)), branches(t1), branches(t2))):
+    for b1, b2 in zip(branches(t1), branches(t2)):
         if same_shape(b1, b2) == False:
             return False
     return True
