@@ -286,12 +286,18 @@ class FireAnt(Ant):
         the current place.
         """
         # BEGIN Problem 4
-        self.armor -= amount
-        if self.armor <= 0:
+        # self.armor -= amount
+        # if self.armor <= 0:
+        #     for bee in self.place.bees[:]:
+        #         bee.reduce_armor(self.damage)
+        #     self.place.remove_insect(self)
+
+
+        if self.armor <= amount:
             for bee in self.place.bees[:]:
                 bee.reduce_armor(self.damage)
-            self.place.remove_insect(self)
-        # END Problem 4
+        Ant.reduce_armor(self, amount)
+        # # END Problem 4
 
 
 class LongThrower(ThrowerAnt):

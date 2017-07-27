@@ -19,7 +19,7 @@ def find_closest(location, centroids):
     [2.0, 3.0]
     """
     # BEGIN Question 3
-    return min(centroids, key = lambda pos: distance(pos, location))
+    return min(centroids, key = lambda centroid: distance(centroid, location))
     # END Question 3
 
 
@@ -143,9 +143,18 @@ def rate_all(user, restaurants, feature_fns):
     predictor = best_predictor(user, ALL_RESTAURANTS, feature_fns)
     reviewed = user_reviewed_restaurants(user, restaurants)
     # BEGIN Question 9
-    return {restaurant_name(r) : \
-            (user_rating(user, restaurant_name(r)) if r in reviewed else predictor(r)) \
-            for r in restaurants}
+    user_rating_map = {}
+    for r in restaurants:
+        if r in reviewed:
+            user_rating_map[restaurant_name(r)] = user_rating(user, restaurant_name(r))
+        else:
+            user_rating_map[restaurant_name(r)] = predictor(r)
+
+    return user_rating_map
+            
+    # return {restaurant_name(r) : \
+    #         (user_rating(user, restaurant_name(r)) if r in reviewed else predictor(r)) \
+    #         for r in restaurants}
     # END Question 9
 
 
