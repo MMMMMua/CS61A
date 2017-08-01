@@ -162,10 +162,11 @@ def read_tail(src):
             # END PROBLEM 2
         else:
             # BEGIN PROBLEM 1
-            if src.current() == '(':
-                return Pair(scheme_read(src), read_tail(src))
-            else:
-                return Pair(src.remove_front(), read_tail(src))
+            # if src.current() == '(':
+            #     return Pair(scheme_read(src), read_tail(src))
+            # else:
+            #     return Pair(src.remove_front(), read_tail(src))
+            return Pair(scheme_read(src), read_tail(src))
             # END PROBLEM 1
     except EOFError:
         raise SyntaxError('unexpected end of file')
