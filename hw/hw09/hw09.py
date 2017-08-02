@@ -2,39 +2,27 @@ from objects import *
 
 ## Iterators
 
-class Link:
-    empty = None
-    
-    def __init__(self, first, rest):
-        self.first = first
-        self.rest = rest
-
-    def __iter__(self):
-        return LinkIterator(self)
-
-
 class LinkIterator:
     """
     >>> lnk = Link(1, Link(2, Link(3)))
-    >>> lnk_iter = iter(lnk)
+    >>> lnk_iter = LinkIterator(lnk)
     >>> next(lnk_iter)
     1
     >>> next(lnk_iter)
     2
     """
     def __init__(self, link):
-        self.curr = link
-        
+        self.itr = link
+
     def __iter__(self):
         return self
 
     def __next__(self):
-        if self.curr == Link.empty:
+        if self.itr == Link.empty:
             raise StopIteration
-
-        result = self.curr.first
-        self.curr = self.rest
-        return result
+        curr = self.itr.first
+        self.itr = self.itr.rest
+        return curr
 
 ## Generators
 
@@ -54,6 +42,7 @@ def in_order(t):
         yield t.root
     else:
         yield from in_order(t.left)
+        yield t.root
         yield from in_order(t.right)
 
 def permutations(lst):
@@ -74,7 +63,15 @@ def permutations(lst):
     if not lst:
         yield []
         return
-    
+
+    lst = list(lst)
+    for elt in lst:
+        newlst = lst[:]
+        newlst.remove(elt)
+
+        res = list(permutations(newlst))
+        for ans in res:
+            yield ans + [elt]
 
 ## Streams
 
@@ -91,7 +88,10 @@ def scale_stream(s, k):
     >>> stream_to_list(scale_stream(Stream.empty, 10))
     []
     """
-    "*** YOUR CODE HERE ***"
+    if s == Stream.empty:
+        return s
+    else:
+        return Stream(s.first * k, lambda: scale_stream(s.rest, k))
 
 def merge(s0, s1):
     """Return a stream over the elements of strictly increasing s0 and s1,
@@ -110,10 +110,11 @@ def merge(s0, s1):
         return s0
 
     e0, e1 = s0.first, s1.first
-    if e0 < e1:
-        return Stream(e0, merge(s0.rest, s1))
-    else:
-        return Stream(e1, merge(s0, s1.rest))
+    if e0 > e1:
+        s0, s1 = s1, s0
+    if e0 == e1:
+        s1 = s1.rest
+    return Stream(s0.first, lambda: merge(s0.rest, s1))
 
 def make_s():
     """Return a stream over all positive integers with only factors 2, 3, & 5.
@@ -122,8 +123,22 @@ def make_s():
     >>> stream_to_list(s, 20)
     [1, 2, 3, 4, 5, 6, 8, 9, 10, 12, 15, 16, 18, 20, 24, 25, 27, 30, 32, 36]
     """
+    counter = 2
     def rest():
-        
+        nonlocal counter
+        def valid(x):
+            while x % 2 == 0:
+                x //= 2
+            while x % 5 == 0:
+                x //= 5
+            while x % 3 == 0:
+                x //= 3
+            return x == 1
+        while not valid(counter):
+            counter += 1
+        counter += 1
+        return Stream(counter-1, rest)
+
     s = Stream(1, rest)
     return s
 
@@ -141,16 +156,22 @@ def make_random_stream(seed, a, c, n):
     >>> stream_to_list(s, 10)
     [17, 894098, 115783, 383424, 775373, 994174, 941859, 558412, 238793, 718506]
     """
-    "*** YOUR CODE HERE ***"
+    return Stream(seed, lambda: make_random_stream((seed * a + c) % n, a, c, n))
 
 def make_stream_of_streams():
     """
     >>> stream_of_streams = make_stream_of_streams()
     >>> stream_of_streams
     Stream(Stream(1, <...>), <...>)
-    >>> stream_to_list(stream_of_streams, 3)
-    [Stream(1, <...>), Stream(2, <...>), Stream(3, <...>)]
-    >>> stream_to_list(stream_of_streams, 4)
-    [Stream(1, <...>), Stream(2, <...>), Stream(3, <...>), Stream(4, <...>)]
+    >>> stream_of_streams.rest
+    Stream(Stream(2, <...>), <...>)
+    >>> stream_of_streams.rest.rest
+    Stream(Stream(3, <...>), <...>)
+    >>> stream_of_streams
+    Stream(Stream(1, Stream(2, Stream(3, <...>))), Stream(Stream(2, Stream(3, <...>)), Stream(Stream(3, <...>), <...>)))
+    >>> t = Stream(1, lambda: map_stream(lambda x:x+1, t))
     """
-    "*** YOUR CODE HERE ***"
+    t = Stream(1, lambda: map_stream(lambda x:x+1, t))
+    f = Stream(t, lambda: map_stream(lambda x:x.rest, f))
+    return f
+

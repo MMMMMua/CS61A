@@ -1,5 +1,4 @@
 ## Linked Lists
-
 class Link:
     """A linked list.
 
@@ -111,7 +110,7 @@ class Stream:
             self.compute_rest = None
         return self.cached_rest
     def __repr__(self):
-        rest = self.cached_rest if self.compute_rest is None else '<Stream>'
+        rest = self.cached_rest if self.compute_rest is None else '<...>'
         return 'Stream({}, {})'.format(self.first, rest)
 
 def constant_stream(x):
