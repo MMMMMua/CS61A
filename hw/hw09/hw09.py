@@ -170,6 +170,10 @@ def make_stream_of_streams():
     >>> stream_of_streams
     Stream(Stream(1, Stream(2, Stream(3, <...>))), Stream(Stream(2, Stream(3, <...>)), Stream(Stream(3, <...>), <...>)))
     >>> t = Stream(1, lambda: map_stream(lambda x:x+1, t))
+    >>> t
+    >>> t.rest
+    >>> t.rest.rest
+    >>> t.rest.rest.rest
     """
     t = Stream(1, lambda: map_stream(lambda x:x+1, t))
     f = Stream(t, lambda: map_stream(lambda x:x.rest, f))

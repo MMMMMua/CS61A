@@ -81,7 +81,7 @@ def eval_all(expressions, env):
     # BEGIN PROBLEM 8
     result = None
     while expressions != nil:
-        tail = (expressions.second == nil) # is last thing to evaluate
+        tail = (expressions.second == nil)  # is last thing to evaluate
         result = scheme_eval(expressions.first, env, tail)
         expressions = expressions.second
     return result
@@ -92,6 +92,8 @@ def eval_all(expressions, env):
 # Environments #
 ################
 all_frames = []
+
+
 class Frame:
     """An environment frame binds Scheme symbols to Scheme values."""
 
@@ -490,7 +492,7 @@ def do_define_macro(expressions, env):
         return macro_name
     else:
         raise SchemeError("invalid macro name")
-    # END Problem 22
+        # END Problem 22
 
 
 def scheme_call_cc(function, env):
@@ -514,6 +516,7 @@ def scheme_call_cc(function, env):
     >>> scheme_eval(read_line(expr), gf)
     20
     '''
+
     class ContinuationError(Exception):
         """Represents a custom error that can be thrown and caught without
         being confused without other errors. Note: this class is defined inside
@@ -536,7 +539,7 @@ def scheme_call_cc(function, env):
         return result
     except ContinuationError as CE:
         return CE.value
-    # END PROBLEM 21
+        # END PROBLEM 21
 
 
 class ContinuationProcedure(Procedure):
@@ -766,8 +769,9 @@ def scheme_optimized_eval(expr, env, tail=False):
             procedure = scheme_eval(first, env)
             if check_procedure(procedure) is None:
                 result = procedure.eval_call(rest, env)
-            # END PROBLEM 20
+                # END PROBLEM 20
     return result
+
 
 ################################################################
 # Uncomment the following line to apply tail call optimization #
