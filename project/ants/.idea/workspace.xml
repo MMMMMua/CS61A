@@ -12,19 +12,18 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/ants$docrunner.coverage" NAME="docrunner Coverage Results" MODIFIED="1500447154566" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_HOME_DIR$/helpers/pycharm" />
     <SUITE FILE_PATH="coverage/ants$Doctests_in_QueenAnt.coverage" NAME="Doctests in QueenAnt Coverage Results" MODIFIED="1500915380928" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/ants$Doctests_in_NinjaAnt__1_.coverage" NAME="Doctests in NinjaAnt (1) Coverage Results" MODIFIED="1500447145754" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/ants$Doctests_in_ants.coverage" NAME="Doctests in ants Coverage Results" MODIFIED="1500447171041" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/ants$lab09.coverage" NAME="lab09 Coverage Results" MODIFIED="1500914964954" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../lab/lab09" />
-    <SUITE FILE_PATH="coverage/ants$Doctests_in_NinjaAnt__2_.coverage" NAME="Doctests in NinjaAnt (2) Coverage Results" MODIFIED="1500447157774" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/ants$Doctests_in_BodyguardAnt.coverage" NAME="Doctests in BodyguardAnt Coverage Results" MODIFIED="1500508257573" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ants$Doctests_in_HungryAnt.coverage" NAME="Doctests in HungryAnt Coverage Results" MODIFIED="1500506232184" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ants$Doctests_in_NinjaAnt__1_.coverage" NAME="Doctests in NinjaAnt (1) Coverage Results" MODIFIED="1500447145754" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ants$Doctests_in_NinjaAnt.coverage" NAME="Doctests in NinjaAnt Coverage Results" MODIFIED="1500449145423" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ants$Doctest_ThrowerAnt_nearest_bee.coverage" NAME="Doctest ThrowerAnt.nearest_bee Coverage Results" MODIFIED="1502044732218" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ants$Doctests_in_NinjaAnt__2_.coverage" NAME="Doctests in NinjaAnt (2) Coverage Results" MODIFIED="1500447157774" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ants$Doctests_in_ants.coverage" NAME="Doctests in ants Coverage Results" MODIFIED="1500447171041" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ants$Doctests_in_BodyguardAnt.coverage" NAME="Doctests in BodyguardAnt Coverage Results" MODIFIED="1500508257573" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ants$Doctests_in_ants__1_.coverage" NAME="Doctests in ants (1) Coverage Results" MODIFIED="1500443124419" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/ants$Doctest_ThrowerAnt_nearest_bee.coverage" NAME="Doctest ThrowerAnt.nearest_bee Coverage Results" MODIFIED="1500444994941" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ants$lab09.coverage" NAME="lab09 Coverage Results" MODIFIED="1500914964954" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../lab/lab09" />
     <SUITE FILE_PATH="coverage/ants$Doctest_apply_effect.coverage" NAME="Doctest apply_effect Coverage Results" MODIFIED="1500928388214" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ants$Doctests_in_ants__2_.coverage" NAME="Doctests in ants (2) Coverage Results" MODIFIED="1500446820512" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="appengine.py" pinned="false" current-in-tab="false">
@@ -40,8 +39,8 @@
       <file leaf-file-name="ants.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ants.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="441">
-              <caret line="303" column="37" lean-forward="false" selection-start-line="303" selection-start-column="37" selection-end-line="303" selection-end-column="37" />
+            <state relative-caret-position="3324">
+              <caret line="1106" column="32" lean-forward="false" selection-start-line="1106" selection-start-column="32" selection-end-line="1106" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -50,8 +49,8 @@
       <file leaf-file-name="docrunner.py" pinned="false" current-in-tab="false">
         <entry file="file://$APPLICATION_HOME_DIR$/helpers/pycharm/docrunner.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6720">
-              <caret line="323" column="0" lean-forward="false" selection-start-line="311" selection-start-column="0" selection-end-line="323" selection-end-column="0" />
+            <state relative-caret-position="2856">
+              <caret line="139" column="0" lean-forward="false" selection-start-line="139" selection-start-column="0" selection-end-line="139" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -173,8 +172,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Doctest apply_effect">
-    <configuration default="false" name="Doctests in HungryAnt" type="tests" factoryName="Doctests" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.Doctest ThrowerAnt.nearest_bee">
+    <configuration name="Doctest ThrowerAnt.nearest_bee" type="tests" factoryName="Doctests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
@@ -186,74 +185,14 @@
       <module name="ants" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ants.py" />
-      <option name="CLASS_NAME" value="HungryAnt" />
-      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="ThrowerAnt" />
+      <option name="METHOD_NAME" value="nearest_bee" />
       <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_CLASS" />
+      <option name="TEST_TYPE" value="TEST_METHOD" />
       <option name="PATTERN" value="" />
       <option name="USE_PATTERN" value="false" />
-      <method />
     </configuration>
-    <configuration default="false" name="Doctests in BodyguardAnt" type="tests" factoryName="Doctests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="ants" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ants.py" />
-      <option name="CLASS_NAME" value="BodyguardAnt" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_CLASS" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="lab09" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../lab/lab09" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="ants" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../lab/lab09/lab09.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Doctests in QueenAnt" type="tests" factoryName="Doctests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="ants" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ants.py" />
-      <option name="CLASS_NAME" value="QueenAnt" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_CLASS" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Doctest apply_effect" type="tests" factoryName="Doctests" temporary="true" nameIsGenerated="true">
+    <configuration name="Doctest apply_effect" type="tests" factoryName="Doctests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
@@ -271,7 +210,52 @@
       <option name="TEST_TYPE" value="TEST_FUNCTION" />
       <option name="PATTERN" value="" />
       <option name="USE_PATTERN" value="false" />
-      <method />
+    </configuration>
+    <configuration name="Doctests in BodyguardAnt" type="tests" factoryName="Doctests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="ants" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ants.py" />
+      <option name="CLASS_NAME" value="BodyguardAnt" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_CLASS" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+    </configuration>
+    <configuration name="Doctests in QueenAnt" type="tests" factoryName="Doctests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="ants" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ants.py" />
+      <option name="CLASS_NAME" value="QueenAnt" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_CLASS" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
     </configuration>
     <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -369,15 +353,6 @@
       <module name="ants" />
       <method />
     </configuration>
-    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <gulpfile />
-      <tasks />
-      <arguments />
-      <envs />
-      <method />
-    </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
       <command value="run" />
       <scripts />
@@ -421,20 +396,38 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method />
     </configuration>
+    <configuration name="lab09" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../lab/lab09" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="ants" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../lab/lab09/lab09.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python tests.Doctests in HungryAnt" />
-      <item index="1" class="java.lang.String" itemvalue="Python tests.Doctests in BodyguardAnt" />
-      <item index="2" class="java.lang.String" itemvalue="Python.lab09" />
-      <item index="3" class="java.lang.String" itemvalue="Python tests.Doctests in QueenAnt" />
-      <item index="4" class="java.lang.String" itemvalue="Python tests.Doctest apply_effect" />
+      <item index="0" class="java.lang.String" itemvalue="Python tests.Doctests in BodyguardAnt" />
+      <item index="1" class="java.lang.String" itemvalue="Python.lab09" />
+      <item index="2" class="java.lang.String" itemvalue="Python tests.Doctests in QueenAnt" />
+      <item index="3" class="java.lang.String" itemvalue="Python tests.Doctest apply_effect" />
+      <item index="4" class="java.lang.String" itemvalue="Python tests.Doctest ThrowerAnt.nearest_bee" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python tests.Doctest apply_effect" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.Doctests in QueenAnt" />
-        <item index="2" class="java.lang.String" itemvalue="Python.lab09" />
-        <item index="3" class="java.lang.String" itemvalue="Python tests.Doctests in BodyguardAnt" />
-        <item index="4" class="java.lang.String" itemvalue="Python tests.Doctests in HungryAnt" />
+        <item index="0" class="java.lang.String" itemvalue="Python tests.Doctest ThrowerAnt.nearest_bee" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.Doctest apply_effect" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.Doctests in QueenAnt" />
+        <item index="3" class="java.lang.String" itemvalue="Python.lab09" />
+        <item index="4" class="java.lang.String" itemvalue="Python tests.Doctests in BodyguardAnt" />
       </list>
     </recent_temporary>
   </component>
@@ -455,29 +448,29 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Doctest_apply_effect - 2017.07.24 at 13h 21m 42s.xml">
-      <configuration name="Doctest apply_effect" configurationId="tests" />
+    <history-entry file="Doctest_ThrowerAnt_nearest_bee - 2017.08.06 at 11h 34m 15s.xml">
+      <configuration name="Doctest ThrowerAnt.nearest_bee" configurationId="tests" />
     </history-entry>
-    <history-entry file="Doctest_apply_effect - 2017.07.24 at 13h 22m 59s.xml">
-      <configuration name="Doctest apply_effect" configurationId="tests" />
+    <history-entry file="Doctest_ThrowerAnt_nearest_bee - 2017.08.06 at 11h 35m 23s.xml">
+      <configuration name="Doctest ThrowerAnt.nearest_bee" configurationId="tests" />
     </history-entry>
-    <history-entry file="Doctest_apply_effect - 2017.07.24 at 13h 23m 28s.xml">
-      <configuration name="Doctest apply_effect" configurationId="tests" />
+    <history-entry file="Doctest_ThrowerAnt_nearest_bee - 2017.08.06 at 11h 35m 45s.xml">
+      <configuration name="Doctest ThrowerAnt.nearest_bee" configurationId="tests" />
     </history-entry>
-    <history-entry file="Doctest_apply_effect - 2017.07.24 at 13h 31m 45s.xml">
-      <configuration name="Doctest apply_effect" configurationId="tests" />
+    <history-entry file="Doctest_ThrowerAnt_nearest_bee - 2017.08.06 at 11h 36m 06s.xml">
+      <configuration name="Doctest ThrowerAnt.nearest_bee" configurationId="tests" />
     </history-entry>
-    <history-entry file="Doctest_apply_effect - 2017.07.24 at 13h 33m 08s.xml">
-      <configuration name="Doctest apply_effect" configurationId="tests" />
+    <history-entry file="Doctest_ThrowerAnt_nearest_bee - 2017.08.06 at 11h 37m 53s.xml">
+      <configuration name="Doctest ThrowerAnt.nearest_bee" configurationId="tests" />
     </history-entry>
-    <history-entry file="Doctests_in_QueenAnt - 2017.07.24 at 09h 53m 25s.xml">
-      <configuration name="Doctests in QueenAnt" configurationId="tests" />
+    <history-entry file="Doctest_ThrowerAnt_nearest_bee - 2017.08.06 at 11h 37m 58s.xml">
+      <configuration name="Doctest ThrowerAnt.nearest_bee" configurationId="tests" />
     </history-entry>
-    <history-entry file="Doctests_in_QueenAnt - 2017.07.24 at 09h 54m 05s.xml">
-      <configuration name="Doctests in QueenAnt" configurationId="tests" />
+    <history-entry file="Doctest_ThrowerAnt_nearest_bee - 2017.08.06 at 11h 38m 42s.xml">
+      <configuration name="Doctest ThrowerAnt.nearest_bee" configurationId="tests" />
     </history-entry>
-    <history-entry file="Doctests_in_QueenAnt - 2017.07.24 at 09h 54m 24s.xml">
-      <configuration name="Doctests in QueenAnt" configurationId="tests" />
+    <history-entry file="Doctest_ThrowerAnt_nearest_bee - 2017.08.06 at 11h 38m 52s.xml">
+      <configuration name="Doctest ThrowerAnt.nearest_bee" configurationId="tests" />
     </history-entry>
     <history-entry file="Doctests_in_QueenAnt - 2017.07.24 at 09h 55m 24s.xml">
       <configuration name="Doctests in QueenAnt" configurationId="tests" />
@@ -496,20 +489,20 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="4" y="0" width="1676" height="1050" extended-state="6" />
+    <frame x="4" y="0" width="1676" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2747858" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32925585" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32881" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32822084" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32985386" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39874738" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3977505" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -521,7 +514,7 @@
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="processedProjectFiles" value="true" />
+    <option name="version" value="1" />
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -535,7 +528,7 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="5" />
+      <option name="time" value="6" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -868,18 +861,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pycharm/docrunner.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6720">
-          <caret line="323" column="0" lean-forward="false" selection-start-line="311" selection-start-column="0" selection-end-line="323" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../lab/lab09/lab09.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="10" column="31" lean-forward="false" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/EC.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1371">
+          <caret line="174" column="29" lean-forward="true" selection-start-line="174" selection-start-column="29" selection-end-line="174" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="32" column="8" lean-forward="false" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -891,17 +890,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/EC.py">
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pycharm/docrunner.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1371">
-          <caret line="174" column="29" lean-forward="true" selection-start-line="174" selection-start-column="29" selection-end-line="174" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gui.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4809">
-          <caret line="241" column="6" lean-forward="false" selection-start-line="241" selection-start-column="6" selection-end-line="241" selection-end-column="6" />
+        <state relative-caret-position="2856">
+          <caret line="139" column="0" lean-forward="false" selection-start-line="139" selection-start-column="0" selection-end-line="139" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -914,10 +906,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/app.js">
+    <entry file="file://$PROJECT_DIR$/gui.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="32" column="8" lean-forward="false" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
+        <state relative-caret-position="4809">
+          <caret line="241" column="6" lean-forward="false" selection-start-line="241" selection-start-column="6" selection-end-line="241" selection-end-column="6" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -931,8 +924,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ants.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="303" column="37" lean-forward="false" selection-start-line="303" selection-start-column="37" selection-end-line="303" selection-end-column="37" />
+        <state relative-caret-position="3324">
+          <caret line="1106" column="32" lean-forward="false" selection-start-line="1106" selection-start-column="32" selection-end-line="1106" selection-end-column="32" />
           <folding />
         </state>
       </provider>

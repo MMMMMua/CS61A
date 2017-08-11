@@ -8,6 +8,8 @@ from ucb import main, trace
 ##############
 # Eval/Apply #
 ##############
+cnt_eval = 0
+cnt_apply = 0
 
 def scheme_eval(expr, env, _=None):  # Optional third argument is ignored
     """Evaluate Scheme expression EXPR in environment ENV.
@@ -35,8 +37,14 @@ def scheme_eval(expr, env, _=None):  # Optional third argument is ignored
     # >>> expr = read_line('(car (list 1 2 3 4))')
     # >>> scheme_eval(expr, create_global_frame())
     # 1
+    >>> gf = create_global_frame()
+    >>> scheme_eval(read_line("(define (add x y) (+ x y))"), gf)
+    >>> scheme_eval(read_line("(add (- 5 3) (or 0 2))"),gf)
     """
     # Evaluate atoms
+    global cnt_eval
+    cnt_eval += 1
+    print("eval", cnt_eval, expr)
     if scheme_symbolp(expr):
         return env.lookup(expr)
     elif self_evaluating(expr):
@@ -53,14 +61,11 @@ def scheme_eval(expr, env, _=None):  # Optional third argument is ignored
         try:
             procedure = scheme_eval(first, env)
             if check_procedure(procedure) is None:
-                # args = rest.map(lambda operand: scheme_eval(operand, env))
-                # result = scheme_apply(procedure, args, env)
                 result = procedure.eval_call(rest, env)
                 return result
         except SchemeError:
             raise SchemeError
-        assert (False)
-        # END PROBLEM 5
+            # END PROBLEM 5
 
 
 def self_evaluating(expr):
@@ -72,6 +77,9 @@ def scheme_apply(procedure, args, env):
     """Apply Scheme PROCEDURE to argument values ARGS (a Scheme list) in
     environment ENV."""
     check_procedure(procedure)
+    global cnt_apply
+    cnt_apply += 1
+    print("apply", cnt_apply, procedure)
     return procedure.apply(args, env)
 
 
@@ -81,7 +89,7 @@ def eval_all(expressions, env):
     # BEGIN PROBLEM 8
     result = None
     while expressions != nil:
-        tail = (expressions.second == nil)  # is last thing to evaluate
+        tail = (expressions.second == nil)  # is the last thing to evaluate
         result = scheme_eval(expressions.first, env, tail)
         expressions = expressions.second
     return result
@@ -140,9 +148,8 @@ class Frame:
         child = Frame(self)  # Create a new child with self as the parent
         # BEGIN PROBLEM 11
         if len(formals) != len(vals):
-            raise SchemeError("symbols and values do match!")
+            raise SchemeError("too much or too few arguments!")
         while formals != nil:
-            # child.define(formals.first, scheme_eval(vals.first, child))
             child.define(formals.first, vals.first)
             formals, vals = formals.second, vals.second
         # END PROBLEM 11
@@ -162,7 +169,8 @@ class Procedure:
         in which the operands are to be evaluated."""
         # BEGIN PROBLEM 5
         evaled_operands = operands.map(lambda arg: scheme_eval(arg, env))
-        return self.apply(evaled_operands, env)
+        #return self.apply(evaled_operands, env)
+        return scheme_apply(self, evaled_operands, env)
         # END PROBLEM 5
 
 
@@ -206,7 +214,7 @@ class PrimitiveProcedure(Procedure):
             else:
                 return self.fn(*python_args)
         except TypeError:
-            raise SchemeError("Wrong number of parameters.")
+            raise SchemeError("wrong number of parameters.")
             # END PROBLEM 4
 
 
@@ -478,7 +486,6 @@ def do_define_macro(expressions, env):
     '(0, 2, 3)'
     """
     # BEGIN Problem 22
-    # "(for formal iterablebody) (list 'map (list 'lambda (list formal) body) iterable))"
     check_form(expressions, 2)
     check_form(expressions.first, 1)
     macro_name = expressions.first.first
@@ -776,7 +783,7 @@ def scheme_optimized_eval(expr, env, tail=False):
 ################################################################
 # Uncomment the following line to apply tail call optimization #
 ################################################################
-scheme_eval = scheme_optimized_eval
+#scheme_eval = scheme_optimized_eval
 
 
 ################

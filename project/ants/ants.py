@@ -45,9 +45,12 @@ class Place(object):
                 # Phase 6: Special handling for BodyguardAnt
                 # BEGIN Problem 1
                 if self.ant.can_contain(insect):
-                    self.ant.ant = insect
+                    # self.ant.ant = insect
+                    self.ant.contain_ant(insect)
                 elif insect.can_contain(self.ant):
-                    insect.ant = self.ant
+                    # insect.ant = self.ant
+                    # self.ant = insect
+                    insect.contain_ant(self.ant)
                     self.ant = insect
                 else:
                     assert self.ant is None, 'Two ants in {0}'.format(self)
@@ -176,10 +179,11 @@ class Ant(Insect):
         Insect.__init__(self, armor)
 
     def can_contain(self, ant):
-        if self.container == True:
-            if self.ant == None and ant.container == False:
-                return True
-        return False
+        # if self.container == True:
+        #     if self.ant == None and ant.container == False:
+        #         return True
+        # return False
+        return self.container and not self.ant and not ant.container
 
 
 class HarvesterAnt(Ant):
@@ -206,8 +210,10 @@ class ThrowerAnt(Ant):
     implemented = True
     damage = 1
     food_cost = 3
+    min_range = 0
+    max_range = 10**10
 
-    def nearest_bee(self, hive, min_range=0, max_range=100000000):  # Is ways like this ok?
+    def nearest_bee(self, hive):  # Is ways like this ok?
         """Return the nearest Bee in a Place that is not the HIVE, connected to
         the ThrowerAnt's Place by following entrances.
 
@@ -215,26 +221,30 @@ class ThrowerAnt(Ant):
         >>> hive, layout = Hive(AssaultPlan()), dry_layout
         >>> dimensions = (1, 9)
         >>> colony = AntColony(None, hive, ant_types(), layout, dimensions)
-        >>> # Testing Nearest bee not in the hive
+        >>> # Testing nearest_bee
         >>> thrower = ThrowerAnt()
-        >>> colony.places["tunnel_0_0"].add_insect(thrower)
+        >>> colony.places['tunnel_0_0'].add_insect(thrower)
+        >>> place = colony.places['tunnel_0_0']
+        >>> near_bee = Bee(2)
+        >>> far_bee = Bee(2)
+        >>> colony.places["tunnel_0_3"].add_insect(near_bee)
+        >>> colony.places["tunnel_0_6"].add_insect(far_bee)
         >>> hive = colony.hive
-        >>> bee = Bee(2)
-        >>> hive.add_insect(bee)      # Adding a bee to the hive
-        >>> thrower.nearest_bee(hive) is bee
+        >>> thrower.nearest_bee(hive) is far_bee
         False
+        >>> thrower.nearest_bee(hive) is near_bee
+        True
         """
         # BEGIN Problem 5
         nearest_bees = []
         step_count = 0
         pos = self.place
         while pos != None and pos != hive:
-            if pos.bees and min_range <= step_count and step_count <= max_range:
+            if pos.bees and self.min_range <= step_count and step_count <= self.max_range:
                 nearest_bees = pos.bees
-                break
+                return random_or_none(nearest_bees)
             pos = pos.entrance
             step_count += 1
-        return random_or_none(nearest_bees)
         # END Problem 5
 
     def throw_at(self, target):
@@ -292,7 +302,6 @@ class FireAnt(Ant):
         #         bee.reduce_armor(self.damage)
         #     self.place.remove_insect(self)
 
-
         if self.armor <= amount:
             for bee in self.place.bees[:]:
                 bee.reduce_armor(self.damage)
@@ -308,8 +317,8 @@ class LongThrower(ThrowerAnt):
     min_range = 5
 
     # BEGIN Problem 6
-    def nearest_bee(self, hive):
-        return ThrowerAnt.nearest_bee(self, hive, self.min_range)
+    # def nearest_bee(self, hive):
+    #     return ThrowerAnt.nearest_bee(self, hive, self.min_range)
 
     implemented = True  # Change to True to view in the GUI
     # END Problem 6
@@ -323,8 +332,8 @@ class ShortThrower(ThrowerAnt):
     max_range = 3
 
     # BEGIN Problem 6
-    def nearest_bee(self, hive):
-        return ThrowerAnt.nearest_bee(self, hive, 0, self.max_range)
+    # def nearest_bee(self, hive):
+    #     return ThrowerAnt.nearest_bee(self, hive, 0, self.max_range)
 
     implemented = True  # Change to True to view in the GUI
     # END Problem 6

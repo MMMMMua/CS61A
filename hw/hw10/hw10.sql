@@ -37,16 +37,22 @@ create table size_of_dogs as
 
 -- All dogs with parents ordered by decreasing height of their parent
 create table by_height as
-  select parent from parents, dogs where parent = name order by height;
+  select par.child from parents as par, dogs as dgs where par.parent = dgs.name order by dgs.height DESC;
 
 -- Sentences about siblings that are the same size
 create table sentences as
-  select "REPLACE THIS LINE WITH YOUR SOLUTION";
+  select parents1.child || " and " || parents2.child || " are " || size1.size || " siblings"
+  from parents as parents1, parents as parents2, size_of_dogs as size1, size_of_dogs as size2
+  where parents1.parent = parents2.parent and size1.size = size2.size and parents1.child = size1.name
+  and parents2.child = size2.name and parents1.child < parents2.child;
 
 -- Heights and names of dogs that are above average in height among
 -- dogs whose height has the same first digit.
 create table above_average as
-  select "REPLACE THIS LINE WITH YOUR SOLUTION";
+  with AVG as (
+    select avg(height) as std, height-height%10 as tenth from dogs group by tenth
+  )
+  select dogs.height, dogs.name from dogs, AVG where dogs.height > AVG.std and dogs.height-dogs.height%10 = AVG.tenth;
 
 -------------------------------------------------------------
                                      -- EUCLID CAFE TYCOON --
@@ -87,11 +93,13 @@ create table locations as
 
 -- Locations without a cafe
 create table open_locations as
-  select "REPLACE THIS LINE WITH YOUR SOLUTION";
+    select n as n from cafes, locations where location != n
+    group by n having count(*) = 3;
 
 -- Items that could be placed on a menu at an open location
 create table allowed as
   with item_locations(item, location) as (
     select item, location from cafes, menus where name = cafe
   )
-  select "REPLACE THIS LINE WITH YOUR SOLUTION";
+  select n as n, item from locations as place, item_locations as food
+  group by n, item having min(abs(n - location)) > 2;

@@ -123,22 +123,26 @@ def make_s():
     >>> stream_to_list(s, 20)
     [1, 2, 3, 4, 5, 6, 8, 9, 10, 12, 15, 16, 18, 20, 24, 25, 27, 30, 32, 36]
     """
-    counter = 2
     def rest():
-        nonlocal counter
-        def valid(x):
-            while x % 2 == 0:
-                x //= 2
-            while x % 5 == 0:
-                x //= 5
-            while x % 3 == 0:
-                x //= 3
-            return x == 1
-        while not valid(counter):
-            counter += 1
-        counter += 1
-        return Stream(counter-1, rest)
+        def helper(s1, s2, s3):
+            if s1[0] < min(s2[0], s3[0]):
+                first = s1[0]
+                ts1 = s1[1:] + [s1[0] * 2]
+                ts2 = s2 + [s1[0] * 3]
+                ts3 = s3 + [s1[0] * 5]
+            elif s2[0] < min(s1[0], s3[0]):
+                first = s2[0]
+                ts1 = s1[:]
+                ts2 = s2[1:] + [s2[0] * 3]
+                ts3 = s3 + [s2[0] * 5]
+            else:
+                first = s3[0]
+                ts1 = s1[:]
+                ts2 = s2[:]
+                ts3 = s3[1:] + [s3[0] * 5]
+            return Stream(first, lambda: helper(ts1, ts2, ts3))
 
+        return helper([2], [3], [5])
     s = Stream(1, rest)
     return s
 
@@ -169,13 +173,7 @@ def make_stream_of_streams():
     Stream(Stream(3, <...>), <...>)
     >>> stream_of_streams
     Stream(Stream(1, Stream(2, Stream(3, <...>))), Stream(Stream(2, Stream(3, <...>)), Stream(Stream(3, <...>), <...>)))
-    >>> t = Stream(1, lambda: map_stream(lambda x:x+1, t))
-    >>> t
-    >>> t.rest
-    >>> t.rest.rest
-    >>> t.rest.rest.rest
     """
     t = Stream(1, lambda: map_stream(lambda x:x+1, t))
     f = Stream(t, lambda: map_stream(lambda x:x.rest, f))
     return f
-
